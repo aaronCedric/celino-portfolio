@@ -1,0 +1,60 @@
+@media only screen and (min-width: 768px) {
+    .large-nav {
+        display: block;
+
+        .nav-container-fix {
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+
+    .small-nav {
+        display: none;
+    }
+
+    .container-content {
+        margin-right: 3.9em;
+        .container-content-main {
+            .content-information {
+                font-size: 32px;
+            }
+        }
+
+        // Contact form
+        // For button
+        .button-container {
+            text-align: center;
+        }
+    }
+
+    // Project Page
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        
+        .project-link-container {
+            h2 {
+                font-size: 36px;
+                padding: .5em;
+            }
+
+            .project-links {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .footer {
+        .line-break {
+            margin: 3rem 8rem 3rem 5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+}
+
+@media only screen and (min-width: 1800px) {
+    
+}

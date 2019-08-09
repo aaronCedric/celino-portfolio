@@ -1,0 +1,11 @@
+// VARIABLES
+$primary-color: #eee6df;
+$secondary-color: #63554a;
+$dark-color: #241f1c;
+$font-color: #fedfc3;
+$active-color: #f0bc0d;
+
+// MIXINS
+@mixin transitionEffect {
+    transition: .5s all ease-in-out;
+}

@@ -1,0 +1,301 @@
+@import 'reset';
+@import 'variables';
+@import 'nav';
+@import 'footer';
+
+body {
+    background-color: $primary-color;
+}
+
+a {
+    color: $dark-color;
+}
+
+a:hover {
+    color: $active-color;
+    @include transitionEffect;
+}
+
+#active-link {
+    color: $active-color;
+}
+
+.text-decoration {
+    color: $active-color;
+    font-weight: 700;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+// For all pages except home
+.body-content {
+    padding: 0 1.6rem;
+    p {
+        font-size: 1.5em;
+    }
+}
+
+// Homepage
+.container {
+    height: 100%;
+
+    &-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            display: flex;
+            align-items: center;
+
+            // Logo container
+            .logo {
+                position: relative;
+                z-index: 3;
+                text-align: center;
+    
+                a img {
+                    height: 50px;
+                    width: 50px;
+                    padding: 1.6rem;
+                }
+            }
+        }
+
+        
+        // Main Content Container
+        &-main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .content-information {
+                font-size: 1.5rem;
+                text-align: center;
+
+                h1 {
+                    position: relative;
+                    z-index: -1;
+                }
+
+                .visual-line {
+                    font-weight: 400;
+                    width: 6.8em;
+                    margin: auto;
+                    top: 50%;
+                    border-right: 2px solid $dark-color;
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    transform: translateY(-50%);
+                }
+
+                .typewriter {
+                    animation: typing 2s steps(15) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+                }
+
+                @keyframes typing {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 6.8em;
+                    }
+                }
+
+                @keyframes blinkTextCursor {
+                    from {
+                        border-right-color: $dark-color;
+                    }
+                    to {
+                        border-right-color: transparent;
+                    }
+                }
+
+                h5 {
+                    padding: .5rem 0 2rem;
+                }
+    
+                &-contact {
+
+                    .contact-social {
+                        li {
+                            display: inline-block;
+                            padding: 1rem .5rem;
+                            font-size: 2rem;
+                            position: relative;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// About Page
+.top-title {
+    width: 100%;
+    height: 5em;
+    background-color: $dark-color;
+    color: $primary-color;
+    
+    h1 {
+        font-size: 4em;
+        position: relative;
+        top: 25%;
+        padding: 0 1.6rem;
+    }
+}
+
+// Contact Page
+.connect-container {
+    position: relative;
+    z-index: -1;
+
+    h3 {
+        font-size: 2em;
+        padding: 10px;
+        margin-bottom: 1em;
+    }
+
+    ul li {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            font-size: 1.2em;
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        & ion-icon {
+            font-size: 2em;
+        }
+    }
+}
+
+.form-container {
+    h3 {
+        font-size: 2em;
+        padding: 10px;
+        margin-bottom: 1em;
+    }
+
+    .form-option {
+        padding: 10px;
+    
+        label {
+            font-size: 1.5em;
+        }
+
+        .text {
+            .contactInput {
+                width: 100%;
+                border: none;
+                padding: 5px;
+                background: transparent;
+                color: $dark-color;
+                border-bottom: 2px solid $dark-color;
+                font-size: 1.7em;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .button-container {
+        .button-send {
+            border: 3px solid $dark-color;
+            font-size: 2em;
+            background: none;
+            padding: .5em;
+            margin-top: 2em;
+            font-weight: bolder;
+            cursor: pointer;
+
+            &:hover {
+                color: $active-color;
+                border-color: $active-color;
+                @include transitionEffect;
+            }
+        }
+    }
+
+}
+
+// Project Page
+.top-container {
+    width: 100%;
+    margin-right: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .project-container {
+        margin-top: 2em;
+
+        &:nth-child(n+2) {
+            margin-top: 5em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid $dark-color;
+        }
+
+        .project-link-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                margin: 15px 15px 0px 15px;
+            }
+
+            .project-links {
+                width: 50%;
+                color: $primary-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .link-button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $dark-color;
+                    margin: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        color: $active-color;
+                        @include transitionEffect;
+                    }
+
+                    a {
+                        color: $primary-color;
+                        padding-left: 15px;
+
+                        &:hover {
+                            color: $active-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@import 'media';

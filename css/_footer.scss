@@ -1,0 +1,27 @@
+.footer {
+    margin: 18em 0 3em 0;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+
+    .line-break {
+        background-color: $dark-color;
+        height: 3px;
+        margin: 3rem 1.6rem;
+    }
+
+    .email-container {
+        font-size: 1.5em;
+        p {
+            padding-top: .5em;
+        }
+    }
+
+    .media-container {
+        ul li {
+            display: inline-block;
+            font-size: 2em;
+            padding: 0 .5em;
+        }
+    }
+}

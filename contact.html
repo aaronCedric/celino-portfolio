@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Aaron Celino Portfolio</title>
+</head>
+<body>
+    <div class="contact-page-container">
+        <!-- Nav for large screens -->
+        <div class="large-nav">
+            <!-- Navigation -->
+            <div class="nav-container-fix">
+                <ul class="nav-container">
+                    <li class="link-container">
+                        <a href="./about.html" class="menu-link">
+                            about.
+                        </a>
+                        <a href="./about.html" class="hidden">ABOUT</a>
+                    </li>
+                    <li class="link-container">
+                        <a href="./projects.html" class="menu-link">
+                            projects.
+                        </a>
+                        <a href="./projects.html" class="hidden">PROJECTS</a>
+                    </li>
+                    <li class="link-container">
+                        <a href="" class="menu-link">
+                            resume.
+                        </a>
+                        <a href="" class="hidden">RESUME</a>
+                    </li> 
+                    <li class="link-container">
+                        <a href="./contact.html" class="menu-link">
+                            contact.
+                        </a>
+                        <a href="./contact.html" class="hidden">CONTACT</a>
+                    </li>
+                    <li class="overlay"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="container-content">
+            <!-- Logo and Nav for phone-->
+            <div class="header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/aaronCelino-logo.svg" alt="Aaron Celino Logo">
+                    </a>
+                </div>
+                <div class="small-nav">
+                    <div class="phone-menu">
+                        <ul class="phone-menu-list">
+                            <li>
+                                <a href="./about.html">
+                                    about.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./projects.html">
+                                    projects.
+                                </a>                
+                            </li>
+                            <li>
+                                <a href="">
+                                    resume.
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="./contact.html" id="active-link">
+                                    contact.
+                                </a>
+                            </li>
+                            <li class="phone-menu-list-bg"></li>
+                        </ul>
+                    </div>
+                    <div class="small-nav-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Content -->
+                <div class="top-title">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="mt-3"></div>
+                <div class="body-content">
+                    <!-- My contact -->
+                    <div class="connect-container">
+                        <h3>I'm here for you!</h3>
+                        <ul>
+                            <li>
+                                <ion-icon name="phone-portrait"></ion-icon>
+                                <p>(916)895 6947</p>
+                            </li>
+                            <li>
+                                <ion-icon name="mail"></ion-icon>
+                                <p>aaronCedric.celino@gmail.com</p>
+                            </li>
+                            <li>
+                                <ion-icon name="pin"></ion-icon>
+                                <p>Algonquin, Illinois</p> 
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Form -->
+                    <div class="mt-3"></div>
+                    <div class="form-container">
+                        <h3>Leave a message!</h3>
+                        <form action="" name="contact-form" id="contact-form" method="POST">
+                            <ul>
+                                <li class="form-option">
+                                    <label for="full-name">Name: </label>
+                                    <div class="text">
+                                        <input type="text" name="contact-name" class="contactInput name" value="" required>
+                                    </div>
+                                </li>
+                                <li class="form-option">
+                                    <label for="contact-email">Email: </label>
+                                    <div class="text">
+                                        <input type="text" name="contact-name" class="contactInput email" value="" required>
+                                    </div>
+                                </li>
+                                <li class="form-option">
+                                    <label for="contact-message">Message: </label>
+                                    <div class="text">
+                                        <textarea type="email" name="contact-message" class="contactInput message" rows="6" value="" required></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="button-container">
+                                <button type="submit" name="contact-submit" class="button-send">Send Message</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="line-break"></div>
+                <div class="email-container">
+                    <h3>contact me at</h3>
+                    <p>aaronCedric.celino@gmail.com</p>
+                </div>
+                <div class="mt-3"></div>
+                <div class="media-container">
+                    <ul>
+                        <a href="">
+                            <li>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </li>
+                        </a>
+                        <a href="https://github.com/aaronCedric/">
+                            <li>
+                                <ion-icon name="logo-github"></ion-icon>
+                            </li>
+                        </a>
+                        <a href="www.linkedin.com/in/aaronCelino">
+                            <li>
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/function.js"></script>
+</body>
+</html>
