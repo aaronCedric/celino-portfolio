@@ -271,6 +271,8 @@ a:hover {
                 align-items: center;
 
                 .link-button {
+                    position: relative;
+                    z-index: -1;
                     width: 100%;
                     padding: 10px;
                     background-color: $dark-color;
@@ -278,11 +280,6 @@ a:hover {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    .logo-github, .globe {
-                        position: relative;
-                        z-index: -1;
-                    }
 
                     &:hover {
                         color: $active-color;

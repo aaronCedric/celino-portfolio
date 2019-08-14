@@ -120,7 +120,7 @@
 
             .phone-menu-list-bg {
                 position: fixed;
-                height: 200%;
+                height: 100%;
                 width: 100%;
                 top: 0;
                 left: 0;
@@ -131,7 +131,6 @@
                 background-color: $primary-color;
                 @include transitionEffect;
                 pointer-events: none;
-                overflow: auto;
             }
         }
     }

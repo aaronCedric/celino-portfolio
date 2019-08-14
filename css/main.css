@@ -159,7 +159,7 @@ a {
 
 .small-nav .phone-menu .phone-menu-list .phone-menu-list-bg {
   position: fixed;
-  height: 200%;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
@@ -171,7 +171,6 @@ a {
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
   pointer-events: none;
-  overflow: auto;
 }
 
 .small-nav .small-nav-icon {
@@ -550,6 +549,8 @@ a:hover {
 }
 
 .top-container .project-container .project-link-container .project-links .link-button {
+  position: relative;
+  z-index: -1;
   width: 100%;
   padding: 10px;
   background-color: #241f1c;
@@ -563,11 +564,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.top-container .project-container .project-link-container .project-links .link-button .logo-github, .top-container .project-container .project-link-container .project-links .link-button .globe {
-  position: relative;
-  z-index: -1;
 }
 
 .top-container .project-container .project-link-container .project-links .link-button:hover {
