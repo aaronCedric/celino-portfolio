@@ -142,6 +142,8 @@ a:hover {
     height: 5em;
     background-color: $dark-color;
     color: $primary-color;
+    position: relative;
+    z-index: -2;
     
     h1 {
         font-size: 4em;
@@ -276,6 +278,11 @@ a:hover {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    .logo-github, .globe {
+                        position: relative;
+                        z-index: -1;
+                    }
 
                     &:hover {
                         color: $active-color;

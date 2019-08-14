@@ -397,6 +397,8 @@ a:hover {
   height: 5em;
   background-color: #241f1c;
   color: #eee6df;
+  position: relative;
+  z-index: -2;
 }
 
 .top-title h1 {
@@ -561,6 +563,11 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top-container .project-container .project-link-container .project-links .link-button .logo-github, .top-container .project-container .project-link-container .project-links .link-button .globe {
+  position: relative;
+  z-index: -1;
 }
 
 .top-container .project-container .project-link-container .project-links .link-button:hover {
