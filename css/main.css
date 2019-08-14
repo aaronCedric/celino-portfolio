@@ -103,6 +103,7 @@ a {
 .small-nav {
   margin-left: auto;
   padding: 1.6em;
+  height: 100%;
 }
 
 .small-nav .phone-menu {
@@ -549,8 +550,6 @@ a:hover {
 }
 
 .top-container .project-container .project-link-container .project-links .link-button {
-  position: relative;
-  z-index: -1;
   width: 100%;
   padding: 10px;
   background-color: #241f1c;
