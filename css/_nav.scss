@@ -1,5 +1,7 @@
 .large-nav {
     display: none;
+    position: relative;
+    z-index: 5;
     
     .nav-container-fix {
         position: fixed;
@@ -26,7 +28,6 @@
                 right: 0;
                 height: 100%;
                 width: 100%;
-                z-index: 1;
                 pointer-events: none;
                 @include transitionEffect;
             }
@@ -45,12 +46,12 @@
                 top: 50%;
                 left: 999%;
                 transform: translate(-50%, -50%);
-                z-index: 2;
+                z-index: 3;
             }
         
             .link-container {
                 position: relative;
-                z-index: 2;
+                z-index: 3;
 
                 // Animation on Hover
                 &:hover {
@@ -132,6 +133,7 @@
                 background-color: $primary-color;
                 @include transitionEffect;
                 pointer-events: none;
+                z-index: 1;
             }
         }
     }

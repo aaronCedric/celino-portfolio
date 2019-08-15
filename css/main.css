@@ -20,6 +20,8 @@ a {
 
 .large-nav {
   display: none;
+  position: relative;
+  z-index: 5;
 }
 
 .large-nav .nav-container-fix {
@@ -53,7 +55,6 @@ a {
   right: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
   pointer-events: none;
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
@@ -78,12 +79,12 @@ a {
   left: 999%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
 }
 
 .large-nav .nav-container-fix .nav-container .link-container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .large-nav .nav-container-fix .nav-container .link-container:hover .menu-link {
@@ -172,6 +173,7 @@ a {
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
   pointer-events: none;
+  z-index: 1;
 }
 
 .small-nav .small-nav-icon {
